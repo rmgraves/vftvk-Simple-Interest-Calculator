@@ -8,30 +8,24 @@
     <body>
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
-
-            Amount: <input type="number"  id="principal">  <br/> <br/>
-            Interest Rate: <input type="range" id="rate" min="1" max="20" onchange="updateRate()" step="0.25" default="10.25">
-            <span id="rate_val">10.25%</span>                      
-            <br/> <br/>
-            No. of Years 
-            <select id="years">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>                
-            </select>         
-            <br/><br/>
-            <button onclick="compute()">Compute Interest</button> 
-            <br>
-            <span id="result">
-            </span>
-            <br>
+            <table>
+                <tr><td>Amount:</td><td> <input type="number" id="principal"></td></tr>
+                <tr><td>Interest Rate:</td><td><input type="range" id="rate" min="1" max="20" onchange="updateRate()" step="0.25" default="10.25"><span id="rate_val">10.25%</span></td></tr>
+                 <tr><td>No. of Years </td><td><select id="years">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>                
+                                                </select>        </td></tr>
+                 <tr><td><button onclick="compute()">Compute Interest</button> </td><td></td></tr>
+                <tr><td colspan="2"> <span id="result"> </span></td><td></td></tr>
+            </table>                  
             <footer>
                 &#169; This Calculator belongs to Ryan G.
             </footer>
